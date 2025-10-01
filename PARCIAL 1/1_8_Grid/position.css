@@ -1,0 +1,55 @@
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(181, 223, 223);
+    overflow: auto;
+    flex-direction: row-reverse;
+    border-radius: 20px;
+    
+}
+
+.caja{
+    width: 500px;
+    height: 100px;
+    border: 10px solid rgb(84, 6, 6);
+    background-color: rgba(207, 47, 47, 0.617);
+    float: right;
+    text-align: center;
+    overflow: auto;
+}
+
+#caja1{
+    background-color: blue;
+    border-color: blueviolet;
+}
+ /*MediaQuery*/
+@media screen and (max-width: 800px){
+    .contenedor{
+        width: 100%;
+    }
+    .caja{
+        background-color: blue;
+        width: 1000px;
+        font-size: 20px;
+        height: 600px;
+        top: 20px;
+        left: 20px;
+        &::after{
+            content: '';
+             width: 500px;
+        height: 100px;
+        background-color: black;
+        }
+    
+    }
+
+}
+.caja:hover{
+    background-color: rgba(0, 65, 66, 0.267);
+}
