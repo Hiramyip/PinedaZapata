@@ -11,10 +11,10 @@
 <body background="./bk.png">
   <center>
   <div style="background-color:#1b1b187f;">
-    <h1><b>Intercontinental Ballistic Missile Gambit </b></h1>
+    <h1 id="titulo"><b>Intercontinental Ballistic Missile Gambit </b></h1>
    </div>
 <hr size="8px" color="black" />
-  <div style="background-color:#b0b0b0; border: 5px solid gray;width:700px; ">
+  <div style="background-color:#b0b0b0; border: 5px solid gray;width:700px; " id="primerdiv">
     <p>La IBMG es una apertura en el ajedrez que consiste en el sacrificio
       intencional de piezas para conseguir una apertura que nos permita el obtener 
       una victoria de manera desciciva
@@ -94,4 +94,11 @@
   <button onclick='document.getElementById("super").src = "./superman-superman-2025.png"' >clickea aqui</button>
  </center>
 </body>
+<script>
+  let Elemento = document.getElementById("titulo");
+  Elemento.onclick = function() {alert("este es el titulo")};
+
+  let div1 = document.getElementById("primerdiv");
+  div1.addEventListener("click", function(e){ div1.setAttribute("style","background-color:#ff8383")})
+</script>
 </html>
