@@ -1,8 +1,7 @@
 import cowsay from "cowsay";
 
-console.log(cowsay.say)
 console.log(cowsay.say({
-    text : "I'm a moooofaasdule",
+    text : "Ecmaasdaaa",
     e : "oO",
     T : "U "
 }))
