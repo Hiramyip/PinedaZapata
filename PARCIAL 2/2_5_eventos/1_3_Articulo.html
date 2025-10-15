@@ -33,7 +33,7 @@
       es que el rival mueva su peon con la intencion de detenernos
     </p>
   </div>
-  <img src="imagenesaje\j1.png" style ="width:400px;height:400px; ">
+  <img id="primeraimg" src="imagenesaje\j1.png" style ="width:400px;height:400px; ">
   <img src="imagenesaje\j2.png" style ="width:400px;height:400px; ">
   <hr size="8px" color="black" />
    <div style="background-color:#b0b0b0; border: 5px solid gray;width:700px;">
@@ -99,6 +99,10 @@
   Elemento.onclick = function() {alert("este es el titulo")};
 
   let div1 = document.getElementById("primerdiv");
-  div1.addEventListener("click", function(e){ div1.setAttribute("style","background-color:#ff8383")})
+  div1.addEventListener("click", function(e){ div1.setAttribute("style","background-color:#ff8383;width:1000px;height:200px")})
+  
+  let img1 = document.getElementById("primeraimg");
+  img1.addEventListener("mouseenter", function(e){ img1.setAttribute("src","./superman-superman-2025.png")})
+  img1.addEventListener("mouseleave", function(e){ img1.setAttribute("src","./imagenesaje/j1.png")})
 </script>
 </html>
