@@ -39,5 +39,23 @@
         console.log(datojson.value)
         }
     </script>
+    </script>
+    <button id="btn4">jquery</button>
+    <div id="resp"></div>
+     <script>
+        $(document).ready(function(){
+            $("#btn4").clock(CargarJq);
+        });
+
+        function CargarJq(){
+            $.ajax({
+                url:"https://api.chucknorris.io/jokes/random",
+                method: "GET",
+                success: function(response){
+                    $("#resp").html(response.value);
+                }
+            })
+    }
+    </script>
 </body>
 </html>
