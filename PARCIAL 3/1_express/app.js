@@ -25,6 +25,7 @@ connection.query(
   ['3'],
   function (err, results) {
     console.log(results);
+    res.json(results);
   }
 );
   //console.log(req.query);
